@@ -1,0 +1,22 @@
+.axis--x path {
+              display: none;
+            }
+            .line {
+              fill: none;
+              stroke: steelblue;
+              stroke-width: 3px;  
+            }
+
+            h2{
+                color: cadetblue;
+                transform: translate(60%,0%);
+            }    
+            .grid line {
+                stroke: lightgrey;
+                stroke-opacity: 0.7;
+                shape-rendering: crispEdges;
+            }
+            
+            .grid path {
+                stroke-width: 0;
+            }
