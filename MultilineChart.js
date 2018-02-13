@@ -1,49 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-    <head>
-        
-        <meta charset="utf-8">
-        
-        <style>
-            .axis--x path {
-              display: none;
-            }
-            .line {
-              fill: none;
-              stroke: steelblue;
-              stroke-width: 3px;  
-            }
-
-            h2{
-                color: cadetblue;
-                transform: translate(60%,0%);
-            }    
-            .grid line {
-                stroke: lightgrey;
-                stroke-opacity: 0.7;
-                shape-rendering: crispEdges;
-            }
-            
-            .grid path {
-                stroke-width: 0;
-            }
-
-        </style>
-    
-    </head>
-
-    <body>    
-        <div style="position: fixed">
-        <h2 style="position: relative">Energy Consumption per Capita</h2>
-
-    
-   <svg width="800" height="550" style="position:relative;transform: translate(30%,0%)"></svg>
-    
-        <script src="//d3js.org/d3.v4.min.js"></script>
-    
-        <script>
-            var svg = d3.select("svg"),
+var svg = d3.select("svg"),
                 margin = {top: 20, right: 80, bottom: 30, left: 50},
                 width = svg.attr("width") - margin.left - margin.right,
                 height = svg.attr("height") - margin.top - margin.bottom,
@@ -190,9 +145,3 @@
               for (var i = 1, n = columns.length, c; i < n; ++i) d[c = columns[i]] = +d[c];
               return d;
             }
-
-        </script>
-    </div>
-    </body>
-
-</html>
